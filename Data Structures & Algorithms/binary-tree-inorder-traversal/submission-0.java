@@ -19,14 +19,14 @@ class Solution {
         helper(root, result);
         return result;
     }
-        private void helper(TreeNode root, List<Integer> result) {
+
+    private void helper(TreeNode root, List<Integer> result) {
         if (root == null) {
             return; 
         }
         
-        helper(root.left, result);  
-        result.add(root.val);       
+        helper(root.left, result);   
+        result.add(root.val);        
         helper(root.right, result);  
     }
-
 }
